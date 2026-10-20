@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Markdown Slides Presentation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="top-bar">
+    <h1>Markdown Slide App</h1>
+    <div class="action-buttons">
+      <button id="save-btn" class="save-btn">Save Slides</button>
+    </div>
+  </div>
+
+  <div class="main-container">
+
+    <div class="editor-section">
+      <label for="markdown-input">Markdown Input:</label>
+      <textarea id="markdown-input" placeholder="Type here... (use --- to split slides)"></textarea>
+    </div>
+
+    <div class="preview-section">
+      <div id="slide-content" class="slide-box">
+      </div>
+
+      <div class="slide-controls">
+        <div class="nav-buttons">
+          <button id="prev-btn">Prev</button>
+          <button id="next-btn">Next</button>
+          <button id="fullscreen-btn">Full Screen</button>
+        </div>
+        <div id="slide-counter" class="counter-display">1 / 1</div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
